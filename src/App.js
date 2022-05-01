@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from "react";
+import LoginForm from "./components/loginform";
 import './App.css';
+import { Nav, Navbar } from "react-bootstrap";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navbar bg='light' variant='light'>
+    <Navbar.Brand>
+    Movie Reviews
+    </Navbar.Brand>
+    <Nav>
+      <Nav.Link href='Movies'>Movies</Nav.Link>
+    </Nav>
+    <Nav>
+      <Nav.Link href='TV Shows'>TV Shows</Nav.Link>
+      </Nav>
+          </Navbar>
+    <LoginForm/>
     </div>
-  );
+  )
 }
 
 export default App;

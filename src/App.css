@@ -1,3 +1,16 @@
+form{
+  border: 15px;
+  border-color:rgb(0, 0, 0);
+}
+#form{
+  border: 15px;
+  border-color:rgb(0, 0, 0);
+}
+h3{
+  border-color:rgb(0, 0, 0);
+  border: 15px;
+}
+
 .App {
   text-align: center;
 }
